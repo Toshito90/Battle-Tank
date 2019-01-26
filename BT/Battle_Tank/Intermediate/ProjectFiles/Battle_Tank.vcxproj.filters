@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Battle_Tank.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{311E8CBB-4009-4C8D-AD3D-CEAE940D4CB7}</UniqueIdentifier>
+      <UniqueIdentifier>{FF2C153F-89D6-46D9-BE85-6878CBB1FD18}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Battle_Tank.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{CB9D96E5-B7B7-4743-8AC6-8004D838B849}</UniqueIdentifier>
+      <UniqueIdentifier>{361C535A-5BB1-49D8-98A5-4279F0FCB56F}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,8 +23,11 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\Battle_Tank">
-      <UniqueIdentifier>{0CD553C4-FC71-4FDA-A8A7-A5E1AC7A12E2}</UniqueIdentifier>
+      <UniqueIdentifier>{516C23C6-8B77-498B-A30E-13BCEB0E1838}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Battle_Tank\Battle_Tank.Build.cs">
       <Filter>Source\Battle_Tank</Filter>
@@ -40,6 +43,24 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\Battle_Tank\Battle_TankGameModeBase.h">
       <Filter>Source\Battle_Tank</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\Battle_Tank\TankPlayerController.cpp">
+      <Filter>Source\Battle_Tank</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Battle_Tank\TankPlayerController.h">
+      <Filter>Source\Battle_Tank</Filter>
+    </ClInclude>
+    <Filter Include="Source\Battle_Tank\Private">
+      <UniqueIdentifier>{AF941AD0-BD81-4A42-A318-44CFE8F49B35}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Battle_Tank\Private\Tank.cpp">
+      <Filter>Source\Battle_Tank\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Battle_Tank\Public">
+      <UniqueIdentifier>{FE2BF356-E019-47BA-83CF-81FC555CC87D}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Battle_Tank\Public\Tank.h">
+      <Filter>Source\Battle_Tank\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
