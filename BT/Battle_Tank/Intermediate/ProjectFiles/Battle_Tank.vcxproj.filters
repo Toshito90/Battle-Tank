@@ -63,4 +63,14 @@
       <Filter>Source\Battle_Tank\Public</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Battle_Tank\Public\TankAIController.h">
+      <Filter>Source\Battle_Tank\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Battle_Tank\Private\TankAIController.cpp">
+      <Filter>Source\Battle_Tank\Private</Filter>
+    </ClCompile>
+  </ItemGroup>
 </Project>
