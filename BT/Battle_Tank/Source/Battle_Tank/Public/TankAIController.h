@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "AIController.h"
+#include "GameFramework/Actor.h"
 #include "Tank.h"
 #include "TankAIController.generated.h"
 
@@ -18,4 +19,6 @@ public:
 	virtual void BeginPlay() override;
 
 	ATank* GetControlledTank() const;
+
+	ATank* GetPlayerTank() const;
 };
