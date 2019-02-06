@@ -28,6 +28,8 @@ private:
 
 	bool GetSightRayHitLocation(FVector& outHitLocation) const;
 
+	bool GetLookDirection(FVector2D screenLocation, FVector& lookDirection) const;
+
 	UPROPERTY(EditAnywhere)
 	float crossHairLocation_X = 0.5;
 
