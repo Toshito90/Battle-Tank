@@ -47,10 +47,28 @@ bool ATankPlayerController::GetSightRayHitLocation(FVector& outHitLocation) cons
 
 	FVector lookDirection;
 	if (GetLookDirection(screenLocation, lookDirection)) {
-		UE_LOG(LogTemp, Warning, TEXT("Look Direction: %s "), *lookDirection.ToString())
+		//UE_LOG(LogTemp, Warning, TEXT("Look Direction: %s "), *lookDirection.ToString())
+		GetLookVectorHitLocation(lookDirection, outHitLocation);
 	}
 
 	return true;
+}
+
+bool ATankPlayerController::GetLookVectorHitLocation(FVector lookDirection, FVector& hitLocation) const {
+	FHitResult hitResult;
+	auto startLocation = PlayerCameraManager->GetCameraLocation();
+	auto endLocation = startLocation + (lookDirection * lineTraceRange);
+
+	if (GetWorld()->LineTraceSingleByChannel(
+		hitResult, 
+		startLocation,
+		endLocation,
+		ECollisionChannel::ECC_Visibility))
+	{
+		hitResult.Location;
+		return true;
+	}
+	return false;
 }
 
 bool ATankPlayerController::GetLookDirection(FVector2D screenLocation, FVector& lookDirection) const {
