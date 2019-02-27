@@ -28,6 +28,7 @@ public:
 public:
 	void AimAt(FVector hitLocation, float launchSpeed);
 	void SetBarrelReference(UStaticMeshComponent* barrelToSet);
+	void MoveBarrelTowards(FVector aimDirection);
 
 private:
 	UStaticMeshComponent* barrel = nullptr;
