@@ -7,6 +7,7 @@
 #include "Kismet/GameplayStatics.h"
 #include "TankAimingComponent.generated.h"
 
+class UTankBarrel;
 
 UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
 class BATTLE_TANK_API UTankAimingComponent : public UActorComponent
@@ -27,9 +28,9 @@ public:
 
 public:
 	void AimAt(FVector hitLocation, float launchSpeed);
-	void SetBarrelReference(UStaticMeshComponent* barrelToSet);
+	void SetBarrelReference(UTankBarrel* barrelToSet);
 	void MoveBarrelTowards(FVector aimDirection);
 
 private:
-	UStaticMeshComponent* barrel = nullptr;
+	UTankBarrel* barrel = nullptr;
 };
